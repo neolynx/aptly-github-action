@@ -13,5 +13,5 @@ inputs:
 runs:
   using: 'docker'
   image: 'debian:bookworm-slim'
-  main: 'aptly-upload.sh'
+  run: 'aptly-upload.sh'
 
