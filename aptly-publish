@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo Aptly Publish
+echo
+echo $INPUT_DIRECTORY
+echo $INPUT_USER @ $INPUT_SERVER

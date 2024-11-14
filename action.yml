@@ -1,5 +1,5 @@
-name: 'Aptly Upload'
-description: 'Upload debian packages to aptly'
+name: 'Aptly Publish'
+description: 'Publish debian packages to a aptly server'
 branding:
   icon: 'chevron-up'
   color: 'red'
@@ -8,7 +8,7 @@ inputs:
     description: 'directory with debian packages'
     required: true
     default: 'build'
-  url:
+  server:
     description: 'URL pf aptly server'
     required: true
     default: 'https://aptly.server'
