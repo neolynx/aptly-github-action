@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo Aptly Publish
+
+echo $@
+env

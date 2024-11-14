@@ -1,7 +1,8 @@
 name: 'Aptly Upload'
 description: 'Upload debian packages to aptly'
-icon: 'chevron-up'
-color: 'red'
+branding:
+  icon: 'chevron-up'
+  color: 'red'
 inputs:
   directory:
     description: 'directory with debian packages'
@@ -12,6 +13,6 @@ inputs:
 #    description: 'The time we greeted you'
 runs:
   using: 'docker'
-  image: 'debian:bookworm-slim'
-  run: 'aptly-upload.sh'
+  image: 'Dockerfile'
+  args: ${{ inputs.directory }}
 
