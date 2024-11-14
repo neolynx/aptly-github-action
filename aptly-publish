@@ -2,5 +2,6 @@
 
 echo Aptly Publish
 echo
-echo $INPUT_DIRECTORY
-echo $INPUT_USER @ $INPUT_SERVER
+echo Directory: $INPUT_DIRECTORY
+echo Aptly: $APTLY_USER @ $APTLY_SERVER
+echo Pass: $APTLY_PASSWORD

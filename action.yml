@@ -8,15 +8,15 @@ inputs:
     description: 'directory with debian packages'
     required: true
     default: 'build'
-  server:
+  aptly_server:
     description: 'URL pf aptly server'
     required: true
     default: 'https://aptly.server'
-  user:
+  altpy_user:
     description: 'login user'
     required: true
     default: 'user'
-  password:
+  aptly_password:
     description: 'login password'
     required: true
     default: 'verysecret'
@@ -25,6 +25,3 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.directory }}
-    - ${{ inputs.url }}
-    - ${{ inputs.user }}
-    - ${{ inputs.password }}
