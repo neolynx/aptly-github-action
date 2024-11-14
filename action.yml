@@ -8,11 +8,23 @@ inputs:
     description: 'directory with debian packages'
     required: true
     default: 'build'
-#outputs:
-#  time:
-#    description: 'The time we greeted you'
+  url:
+    description: 'URL pf aptly server'
+    required: true
+    default: 'https://aptly.server'
+  user:
+    description: 'login user'
+    required: true
+    default: 'user'
+  password:
+    description: 'login password'
+    required: true
+    default: 'verysecret'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.directory }}
+    - ${{ inputs.url }}
+    - ${{ inputs.user }}
+    - ${{ inputs.password }}
