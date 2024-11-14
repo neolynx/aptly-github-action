@@ -12,5 +12,6 @@ inputs:
 #    description: 'The time we greeted you'
 runs:
   using: 'docker'
+  image: 'debian:bookworm-slim'
   main: 'aptly-upload.sh'
 
